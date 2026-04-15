@@ -17,7 +17,11 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "SiAnter — Layanan Antar Makanan & Kirim Barang | Balai Riam",
+  metadataBase: new URL("https://www.siantersolusi.web.id/"),
+  title: {
+    default: "SiAnter — Layanan Antar Makanan & Kirim Barang | Balai Riam",
+    template: "%s | SiAnter",
+  },
   description:
     "SiAnter adalah platform layanan antar makanan dan kirim barang berbasis aplikasi untuk Kecamatan Balai Riam dan sekitarnya. Cepat, mudah, dan efisien.",
   keywords: [
@@ -28,12 +32,39 @@ export const metadata: Metadata = {
     "UMKM lokal",
     "delivery desa",
     "jasa antar",
+    "delivery Balai Riam",
+    "antar makanan Sukamara",
   ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "SiAnter — Layanan Antar Makanan & Kirim Barang",
     description:
       "Platform layanan antar makanan dan kirim barang untuk masyarakat Kecamatan Balai Riam dan sekitarnya.",
+    url: "https://www.siantersolusi.web.id/",
+    siteName: "SiAnter",
+    locale: "id_ID",
     type: "website",
+    images: [
+      {
+        url: "/siantar-aja-logo.png",
+        width: 120,
+        height: 40,
+        alt: "SiAnter Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SiAnter — Layanan Antar Makanan & Kirim Barang",
+    description:
+      "Platform layanan antar makanan dan kirim barang untuk masyarakat Kecamatan Balai Riam dan sekitarnya.",
+    images: ["/siantar-aja-logo.png"],
   },
 };
 
