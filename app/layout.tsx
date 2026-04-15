@@ -69,6 +69,9 @@ export const metadata: Metadata = {
       "Platform layanan antar makanan dan kirim barang untuk masyarakat Kecamatan Balai Riam, Sukamara, Kalimantan Tengah.",
     images: ["/siantar-aja-logo.png"],
   },
+  verification: {
+    google: "24j6yTYvESvrg1fLzZIYtsllw5qLdhWH3zz0x6CdDts",
+  },
 };
 
 export default function RootLayout({
@@ -83,6 +86,8 @@ export default function RootLayout({
     "image": "https://www.siantersolusi.web.id/siantar-aja-logo.png",
     "@id": "https://www.siantersolusi.web.id",
     "url": "https://www.siantersolusi.web.id",
+    "telephone": "",
+    "priceRange": "$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Kecamatan Balai Riam",
@@ -90,7 +95,7 @@ export default function RootLayout({
       "addressRegion": "Kalimantan Tengah",
       "addressCountry": "ID"
     },
-    "description": "Layanan antar makanan dan kirim barang di Balai Riam, Sukamara, Kalimantan Tengah.",
+    "description": "Layanan antar makanan dan kirim barang profesional untuk UMKM dan masyarakat di Balai Riam, Sukamara, Kalimantan Tengah.",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
